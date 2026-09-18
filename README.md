@@ -1,1 +1,1 @@
-# yashpalsingh.github.io
+# singh-yashpal.github.io
