@@ -23,15 +23,16 @@
         flex: 1 1 320px;
       }
 
-    .profile-photo {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #dfeaf5;
-      display: block;
-    }
-      
+      .profile-photo {
+        width: 80px !important;
+        height: 80px !important;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #dfeaf5;
+        display: block;
+        flex-shrink: 0;
+      }
 
       @media (max-width: 700px) {
         .intro {
