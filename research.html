@@ -4,10 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Research | Yashpal Singh</title>
-    <meta
-      name="description"
-      content="First-principles methods for localized electrons, reactive environments, and materials that interact with light."
-    >
+    <meta name="description" content="First-principles methods for localized electrons, reaction barriers, reactive environments, and materials that interact with light.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23132e48'/%3E%3Ctext x='4' y='23' font-family='Arial' font-size='18' fill='white'%3EYS%3C/text%3E%3C/svg%3E">
   </head>
@@ -16,10 +13,7 @@
 
     <header>
       <div class="top">
-        <a class="brand" href="index.html">
-          <span>YS</span>Yashpal Singh
-        </a>
-
+        <a class="brand" href="index.html"><span>YS</span>Yashpal Singh</a>
         <nav aria-label="Main navigation">
           <a href="index.html">Home / About</a>
           <a href="research.html" aria-current="page">Research</a>
@@ -37,49 +31,71 @@
         <div class="intro">
           <p class="eyebrow">Theory and applications</p>
           <h1>Research</h1>
-          <p class="lead">
-            First-principles methods for localized electrons, reactive environments,
-            and materials that interact with light.
-          </p>
+          <p class="lead">First-principles methods for localized electrons, reactive environments, and materials that interact with light.</p>
         </div>
 
         <section>
           <div class="number">01 / ELECTRONIC-STRUCTURE METHODS</div>
           <h2>Self-interaction correction and localized orbitals</h2>
-          <p>
-            Self-interaction error can distort the description of localized electronic
-            states, stretched bonds, and transition states. My work examines these error
-            sources and develops methods within the Fermi-Löwdin orbital self-interaction
-            correction (FLO-SIC) framework for periodic materials.
-          </p>
-          <p>
-            A central direction is a Wannier-first approach that constructs localized,
-            Wannier-like orbitals directly in real space using Gaussian basis functions,
-            reducing dependence on conventional Block-state workflows.
-          </p>
-
+          <p>Self-interaction error can distort the description of localized electronic states, stretched bonds, and transition states. My work examines these error sources and develops methods within the Fermi–Löwdin orbital self-interaction correction (FLO-SIC) framework for periodic materials.</p>
+          <p>A central direction is a Wannier-first approach that constructs localized, Wannier-like orbitals directly in real space using Gaussian basis functions, reducing dependence on conventional Bloch-state workflows.</p>
           <h3>Research directions</h3>
           <ul class="list">
             <li>Extend periodic FLOSIC to magnets, chiral, helical, and low-symmetry systems.</li>
-            <li>Evaluate Perdew-Zunger self-interaction corrections for stretched bonds, charged defects, and localized excitations.</li>
+            <li>Evaluate Perdew–Zunger self-interaction corrections for stretched bonds, charged defects, and localized excitations.</li>
             <li>Develop automated workflows and benchmark datasets for systematic validation.</li>
           </ul>
         </section>
 
         <section>
-          <div class="number">02 / CATALYSIS AND ENERGY</div>
-          <h2>Reliable reaction energetics</h2>
-          <p>
-            I use first-principles calculations to investigate catalytic mechanisms and
-            structure-property relationships in transition-metal phosphides and carbides,
-            single-atom catalysts, and doped two-dimensional materials. Applications include
-            oxygen reduction, oxygen evolution, hydrogen evolution, and selective hydrogenation.
-          </p>
-          <p>
-            Reaction barriers involving stretched bonds and hydrogen transfer provide a connection
-            between electronic-structure accuracy and catalytic predictions.
-          </p>
+          <div class="number">02 / REACTION BARRIERS</div>
+          <h2>Analyzing PZ-SIC beyond the LSDA</h2>
+          <p>Incorporating self-interaction corrections can substantially improve density-functional predictions of chemical reaction barrier heights. In this work, I performed an orbital-by-orbital analysis of FLOSIC corrections for three semi-local density-functional approximations on the three lowest rungs of Jacob’s ladder, following four representative reactions from the BH76 benchmark set.</p>
+          <p>The analysis follows the reactant (R), transition-state (TS), and product (P) configurations. Across all three functionals, the dominant contribution to the SIC of barrier heights comes from stretched-bond orbitals that emerge near the transition state.</p>
 
+          <div class="grid two">
+            <article class="card">
+              <h3>XC/H as an orbital diagnostic</h3>
+              <p>The ratio of self-exchange–correlation energy to self-Hartree energy, <strong>XC/H</strong>, measures the one-electron self-interaction error of an orbital.</p>
+              <p><strong>XC/H = 1.0</strong> means exact cancellation and therefore no contribution to the FLOSIC correction. Larger values are associated with stretched or strongly lobed orbitals.</p>
+            </article>
+            <article class="card">
+              <h3>Evolution along the reaction path</h3>
+              <p>Comparing XC/H for corresponding orbitals in R, TS, and P identifies which orbitals drive the SIC of reaction energies and barrier heights.</p>
+              <p>This provides a direct connection between the electronic structure of stretched bonds and the accuracy of predicted reaction kinetics.</p>
+            </article>
+          </div>
+
+          <h3>Presentation highlights</h3>
+          <div class="grid two">
+            <figure class="card">
+              <a href="APS-regional_flint.pdf#page=1" target="_blank" rel="noopener">
+                <object data="APS-regional_flint.pdf#page=1" type="application/pdf" width="100%" height="260" aria-label="Title slide from the APS regional presentation">
+                  <span>Open the presentation title slide</span>
+                </object>
+              </a>
+              <figcaption>Presentation overview: analyzing PZ-SIC for reaction barrier heights beyond the LSDA.</figcaption>
+            </figure>
+            <figure class="card">
+              <a href="APS-regional_flint.pdf#page=8" target="_blank" rel="noopener">
+                <object data="APS-regional_flint.pdf#page=8" type="application/pdf" width="100%" height="260" aria-label="Research findings slide from the APS regional presentation">
+                  <span>Open the research findings slide</span>
+                </object>
+              </a>
+              <figcaption>Key result: stretched-bond orbitals near the transition state control the major SIC contributions.</figcaption>
+            </figure>
+          </div>
+          <p class="note">The presentation panels above are taken from the uploaded APS regional presentation. Select either panel to open the full PDF.</p>
+
+          <p><a href="publications.html#paper-2">Read the published JCP paper: “The rise and fall of stretched bond errors: Extending the analysis of Perdew–Zunger self-interaction corrections of reaction barrier heights beyond the LSDA.”</a></p>
+          <p><a href="https://doi.org/10.1063/5.0179261">Published in The Journal of Chemical Physics (2024), DOI: 10.1063/5.0179261</a></p>
+        </section>
+
+        <section>
+          <div class="number">03 / CATALYSIS AND ENERGY</div>
+          <h2>Reliable reaction energetics</h2>
+          <p>I use first-principles calculations to investigate catalytic mechanisms and structure-property relationships in transition-metal phosphides and carbides, single-atom catalysts, and doped two-dimensional materials. Applications include oxygen reduction, oxygen evolution, hydrogen evolution, and selective hydrogenation.</p>
+          <p>Reaction barriers involving stretched bonds and hydrogen transfer provide a connection between electronic-structure accuracy and catalytic predictions.</p>
           <h3>Research directions</h3>
           <ul class="list">
             <li>Screen transition-metal, bimetallic, and 2D catalyst platforms using DFT and targeted self-interaction corrections.</li>
@@ -89,53 +105,23 @@
         </section>
 
         <section>
-          <div class="number">03 / OPTOELECTRONICS</div>
+          <div class="number">04 / OPTOELECTRONICS</div>
           <h2>Electronic and optical response</h2>
-          <p>
-            My research links electronic structure to optical behavior in perovskites and related
-            semiconductors, hybrid halides, and donor-acceptor conjugated polymers. Collaboration
-            with experimental groups connects calculations to materials selection and the interpretation
-            of optical measurements.
-          </p>
-
+          <p>My research links electronic structure to optical behavior in perovskites and related semiconductors, hybrid halides, and donor–acceptor conjugated polymers. Collaboration with experimental groups connects calculations to materials selection and the interpretation of optical measurements.</p>
           <h3>Research directions</h3>
           <ul class="list">
             <li>Investigate lead-free and double perovskites and related semiconductors.</li>
-            <li>Use GW and Bethe-Salpeter equation methods to study absorption, excitons, and emission.</li>
+            <li>Use GW and Bethe–Salpeter equation methods to study absorption, excitons, and emission.</li>
             <li>Study defects, stability, and quantum confinement in optoelectronic materials.</li>
           </ul>
         </section>
 
         <section>
-          <div class="number">04 / MANY-BODY THEORY</div>
+          <div class="number">05 / MANY-BODY THEORY</div>
           <h2>Self-consistent GW theory</h2>
-          <p>
-            It is now well known that traditional Kohn-Sham (KS) density functional theory (DFT) with local exchange-correlation (xc) functionals such as LDA and GGA underestimates band gaps because of incomplete cancellation of the self-interaction energy and the absence of long-range polarization effects. Moreover, KS eigenvalues cannot be used to explain observed photoemission spectroscopy and optical absorption, even though they are often used as the starting point in GW calculations.
-          </p>
-          <p>
-            The single-shot flavor of the GW approximation, G<sub>0</sub>W<sub>0</sub>, is quite successful in predicting experimental band gaps of weakly correlated s-p bonded systems. However, because it lacks self-consistency, results depend on the choice of starting xc functional and can vary significantly across the literature.
-          </p>
-          <p>
-            Several fully self-consistent GW methods, including scGW and QSGW approaches, have been explored with partial success. These methods often systematically underestimate dielectric constants, leading to overestimated band gaps. To improve the description of electronic spectra, it is necessary to go beyond the conventional GW approximation by incorporating vertex corrections in both the self-energy and the screened interaction W. A graphical representation of Hedin's equations with vertex terms is a natural framework for this extension, with vertex corrections corresponding to exchange of random-phase approximation bubble diagrams.
-          </p>
-          <p>
-            Attempts to partially include vertex corrections are being pursued through forms such as second-order screened exchange (SOSEX) and related approximations, which can improve band-gap predictions. A full self-consistent solution of Hedin's equations remains technically challenging, and computational efficiency is often improved through strategies such as diagonal G and low-rank or subspace W approximations.
-          </p>
-          <p>
-            <a href="publications.html#paper-8">Tagged work: Analysis of diagonal G and subspace W approximations within fully self-consistent GW calculations for bulk semiconducting systems.</a>
-          </p>
-        </section>
-
-        <section>
-          <h2>Many-body theory and scalable computation</h2>
-          <p>
-            My background includes relativistic coupled-cluster calculations for atomic properties and
-            electric dipole moments, alongside self-consistent GW methods for semiconductors. Across
-            these areas, I focus on balancing electronic-structure accuracy with memory use and computational cost.
-          </p>
-          <p class="note">
-            Research directions described ongoing interests and proposed extensions, rather than completed project outcomes.
-          </p>
+          <p>My background includes self-consistent GW methods for semiconductors and relativistic coupled-cluster calculations for atomic properties and electric dipole moments. Across these areas, I focus on balancing electronic-structure accuracy with memory use and computational cost.</p>
+          <p><a href="publications.html#paper-8">Tagged work: Analysis of diagonal G and subspace W approximations within fully self-consistent GW calculations for bulk semiconducting systems.</a></p>
+          <p class="note">Research directions described here include ongoing interests and proposed extensions, rather than completed project outcomes.</p>
         </section>
       </div>
     </main>
