@@ -6,7 +6,7 @@
     <title>Research | Yashpal Singh</title>
     <meta name="description" content="First-principles methods for localized electrons, reaction barriers, reactive environments, and materials that interact with light.">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23132e48'/%3E%3Ctext x='4' y='23' font-family='Arial' font-size='18' font-weight='700' fill='white'%3EYS%3C/text%3E%3C/svg%3E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23132e48'/%3E%3Ctext x='4' y='23' font-family='Arial' font-size='16' fill='white'%3EYS%3C/text%3E%3C/svg%3E">
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -37,8 +37,35 @@
         <section>
           <div class="number">01 / ELECTRONIC-STRUCTURE METHODS</div>
           <h2>Self-interaction correction and localized orbitals</h2>
-          <p>Self-interaction error can distort the description of localized electronic states, stretched bonds, and transition states. My work examines these error sources and develops methods within density-functional theory to improve the treatment of localized electrons.</p>
-          <p>A central direction is a Wannier-first approach that constructs localized, Wannier-like orbitals directly in real space using Gaussian basis functions, reducing dependence on conventional localization procedures.</p>
+          <p>Self-interaction error can distort the description of localized electronic states, stretched bonds, and transition states. My work examines these error sources and develops methods within density-functional theory that retain an accurate, physically meaningful orbital picture.</p>
+          <p>A central direction is a Wannier-first approach that constructs localized, Wannier-like orbitals directly in real space using Gaussian basis functions, reducing dependence on conventional canonical Bloch-like states during the self-consistent cycle.</p>
+
+          <article class="feature card">
+            <div class="number">FEATURED PAPER</div>
+            <h3>A Wannier-first formulation for extended systems</h3>
+            <p>This real-space formulation constructs variational Wannier-like functions self-consistently within a finite Wannier domain. The orbitals provide the occupied space and are used to build the charge density, electrostatic potential, and per-cell energy, while band structures can be recovered afterward from a Bloch-like Gaussian basis.</p>
+            <p>The framework naturally accommodates combined translation–rotation (screw) symmetries, making it suitable for chiral and helical systems with finite twist angles. Demonstrations on linear and twisted chains, graphene, AA graphite, and helically stacked graphite show close agreement with reference periodic calculations and establish a foundation for orbital-dependent functionals such as Perdew–Zunger self-interaction correction.</p>
+            <p><a href="https://doi.org/10.1063/5.0348813">Read the published paper in The Journal of Chemical Physics (2026), DOI: 10.1063/5.0348813</a></p>
+
+            <div class="grid two">
+              <figure class="card">
+                <a href="wannier-fist.pdf#page=1" target="_blank" rel="noopener">
+                  <object data="wannier-fist.pdf#page=1" type="application/pdf" width="100%" height="320" aria-label="Wannier-first paper PDF">
+                    <span>Open the Wannier-first paper</span>
+                  </object>
+                </a>
+                <figcaption>Paper PDF: real-space density-functional theory with localized Wannier-like functions.</figcaption>
+              </figure>
+              <figure class="card">
+                <a href="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fsingh-yashpal.github.io%2Faps_denver26.pptx" target="_blank" rel="noopener">
+                  <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fsingh-yashpal.github.io%2Faps_denver26.pptx" title="APS Denver 2026 presentation" width="100%" height="320" frameborder="0"></iframe>
+                </a>
+                <figcaption>APS Denver 2026 presentation. <a href="aps_denver26.pptx">Download the PowerPoint</a>.</figcaption>
+              </figure>
+            </div>
+            <p class="note">The paper preview and presentation window open the repository-hosted research materials. The PDF is currently stored in the repository as <code>wannier-fist.pdf</code>.</p>
+          </article>
+
           <h3>Research directions</h3>
           <ul class="list">
             <li>Extend periodic FLOSIC to magnets, chiral, helical, and low-symmetry systems.</li>
@@ -50,8 +77,8 @@
         <section>
           <div class="number">02 / REACTION BARRIERS</div>
           <h2>Analyzing PZ-SIC beyond the LSDA</h2>
-          <p>Incorporating self-interaction corrections can substantially improve density-functional predictions of chemical reaction barrier heights. In this work, I performed an orbital-by-orbital analysis using the FLOSIC code to understand how Perdew–Zunger self-interaction corrections change reaction energies and transition-state barriers.</p>
-          <p>The analysis follows the reactant (R), transition-state (TS), and product (P) configurations. Across all three functionals, the dominant contribution to the SIC of barrier heights comes from orbitals associated with stretched bonds and changes in orbital localization along the reaction path.</p>
+          <p>Incorporating self-interaction corrections can substantially improve density-functional predictions of chemical reaction barrier heights. In this work, I performed an orbital-by-orbital analysis of Perdew–Zunger self-interaction corrections within FLOSIC.</p>
+          <p>The analysis follows the reactant (R), transition-state (TS), and product (P) configurations. Across all three functionals, the dominant contribution to the SIC of barrier heights comes from orbitals whose localization changes along the reaction coordinate.</p>
 
           <div class="grid two">
             <article class="card">
@@ -100,7 +127,7 @@
         <section>
           <div class="number">04 / OPTOELECTRONICS</div>
           <h2>Electronic and optical response</h2>
-          <p>My research links electronic structure to optical behavior in perovskites and related semiconductors, hybrid halides, and donor–acceptor conjugated polymers. Collaboration with experimental groups connects computed properties to measurable optical response.</p>
+          <p>My research links electronic structure to optical behavior in perovskites and related semiconductors, hybrid halides, and donor–acceptor conjugated polymers. Collaboration with experimental groups connects computed structures and excitations to measurable optical response.</p>
           <h3>Research directions</h3>
           <ul class="list">
             <li>Investigate lead-free and double perovskites and related semiconductors.</li>
@@ -112,7 +139,7 @@
         <section>
           <div class="number">05 / MANY-BODY THEORY</div>
           <h2>Self-consistent GW theory</h2>
-          <p>My background includes self-consistent GW methods for semiconductors and relativistic coupled-cluster calculations for atomic properties and electric dipole moments. Across these areas, I focus on connecting accurate many-body electronic structure with physical observables.</p>
+          <p>My background includes self-consistent GW methods for semiconductors and relativistic coupled-cluster calculations for atomic properties and electric dipole moments. Across these areas, I develop computational approaches that connect accurate many-body descriptions with practical materials calculations.</p>
           <p><a href="publications.html#paper-8">Tagged work: Analysis of diagonal G and subspace W approximations within fully self-consistent GW calculations for bulk semiconducting systems.</a></p>
           <p class="note">Research directions described here include ongoing interests and proposed extensions, rather than completed project outcomes.</p>
         </section>
