@@ -6,7 +6,7 @@
     <title>Research | Yashpal Singh</title>
     <meta name="description" content="First-principles methods for localized electrons, reaction barriers, reactive environments, and materials that interact with light.">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23132e48'/%3E%3Ctext x='4' y='23' font-family='Arial' font-size='18' fill='white'%3EYS%3C/text%3E%3C/svg%3E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23132e48'/%3E%3Ctext x='4' y='23' font-family='Arial' font-size='18' font-weight='700' fill='white'%3EYS%3C/text%3E%3C/svg%3E">
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -37,8 +37,8 @@
         <section>
           <div class="number">01 / ELECTRONIC-STRUCTURE METHODS</div>
           <h2>Self-interaction correction and localized orbitals</h2>
-          <p>Self-interaction error can distort the description of localized electronic states, stretched bonds, and transition states. My work examines these error sources and develops methods within the Fermi–Löwdin orbital self-interaction correction (FLO-SIC) framework for periodic materials.</p>
-          <p>A central direction is a Wannier-first approach that constructs localized, Wannier-like orbitals directly in real space using Gaussian basis functions, reducing dependence on conventional Bloch-state workflows.</p>
+          <p>Self-interaction error can distort the description of localized electronic states, stretched bonds, and transition states. My work examines these error sources and develops methods within density-functional theory to improve the treatment of localized electrons.</p>
+          <p>A central direction is a Wannier-first approach that constructs localized, Wannier-like orbitals directly in real space using Gaussian basis functions, reducing dependence on conventional localization procedures.</p>
           <h3>Research directions</h3>
           <ul class="list">
             <li>Extend periodic FLOSIC to magnets, chiral, helical, and low-symmetry systems.</li>
@@ -50,8 +50,8 @@
         <section>
           <div class="number">02 / REACTION BARRIERS</div>
           <h2>Analyzing PZ-SIC beyond the LSDA</h2>
-          <p>Incorporating self-interaction corrections can substantially improve density-functional predictions of chemical reaction barrier heights. In this work, I performed an orbital-by-orbital analysis of FLOSIC corrections for three semi-local density-functional approximations on the three lowest rungs of Jacob’s ladder, following four representative reactions from the BH76 benchmark set.</p>
-          <p>The analysis follows the reactant (R), transition-state (TS), and product (P) configurations. Across all three functionals, the dominant contribution to the SIC of barrier heights comes from stretched-bond orbitals that emerge near the transition state.</p>
+          <p>Incorporating self-interaction corrections can substantially improve density-functional predictions of chemical reaction barrier heights. In this work, I performed an orbital-by-orbital analysis using the FLOSIC code to understand how Perdew–Zunger self-interaction corrections change reaction energies and transition-state barriers.</p>
+          <p>The analysis follows the reactant (R), transition-state (TS), and product (P) configurations. Across all three functionals, the dominant contribution to the SIC of barrier heights comes from orbitals associated with stretched bonds and changes in orbital localization along the reaction path.</p>
 
           <div class="grid two">
             <article class="card">
@@ -59,11 +59,12 @@
               <p>The ratio of self-exchange–correlation energy to self-Hartree energy, <strong>XC/H</strong>, measures the one-electron self-interaction error of an orbital.</p>
               <p><strong>XC/H = 1.0</strong> means exact cancellation and therefore no contribution to the FLOSIC correction. Larger values are associated with stretched or strongly lobed orbitals.</p>
             </article>
-            <article class="card">
-              <h3>Evolution along the reaction path</h3>
-              <p>Comparing XC/H for corresponding orbitals in R, TS, and P identifies which orbitals drive the SIC of reaction energies and barrier heights.</p>
-              <p>This provides a direct connection between the electronic structure of stretched bonds and the accuracy of predicted reaction kinetics.</p>
-            </article>
+            <figure class="card">
+              <a href="reaction_path.jpg" target="_blank" rel="noopener">
+                <img src="reaction_path.jpg" alt="Reaction path showing reactant, transition-state, and product configurations" width="100%">
+              </a>
+              <figcaption>Reaction path used to analyze orbital-by-orbital self-interaction corrections with FLOSIC.</figcaption>
+            </figure>
           </div>
 
           <h3>Presentation highlights</h3>
@@ -76,25 +77,17 @@
               </a>
               <figcaption>Presentation overview: analyzing PZ-SIC for reaction barrier heights beyond the LSDA.</figcaption>
             </figure>
-            <figure class="card">
-              <a href="APS-regional_flint.pdf#page=1" target="_blank" rel="noopener">
-                <object data="reaction_path.jpg#page=1" type="application/pdf" width="100%" height="260" aria-label="Title slide from the APS regional presentation">
-                  <span>Open the presentation title slide</span>
-                </object>
-              </a>
-              <figcaption>Presentation overview: analyzing PZ-SIC for reaction barrier heights beyond the LSDA.</figcaption>
-            </figure>
           </div>
-          <p class="note">The presentation panels above are taken from the uploaded APS regional presentation. Select either panel to open the full PDF.</p>
+          <p class="note">The presentation panel above is taken from the uploaded APS regional presentation. Select it to open the full PDF.</p>
 
-          <p><a href="publications.html#paper-2">Read the published JCP paper: “The rise and fall of stretched bond errors: Extending the analysis of Perdew–Zunger self-interaction corrections of reaction barrier heights beyond the LSDA.”</a></p>
+          <p><a href="publications.html#paper-2">Read the published JCP paper: “The rise and fall of stretched bond errors: Extending the analysis of Perdew–Zunger self-interaction corrections of reaction barrier heights.”</a></p>
           <p><a href="https://doi.org/10.1063/5.0179261">Published in The Journal of Chemical Physics (2024), DOI: 10.1063/5.0179261</a></p>
         </section>
 
         <section>
           <div class="number">03 / CATALYSIS AND ENERGY</div>
           <h2>Reliable reaction energetics</h2>
-          <p>I use first-principles calculations to investigate catalytic mechanisms and structure-property relationships in transition-metal phosphides and carbides, single-atom catalysts, and doped two-dimensional materials. Applications include oxygen reduction, oxygen evolution, hydrogen evolution, and selective hydrogenation.</p>
+          <p>I use first-principles calculations to investigate catalytic mechanisms and structure-property relationships in transition-metal phosphides and carbides, single-atom catalysts, and doped two-dimensional materials.</p>
           <p>Reaction barriers involving stretched bonds and hydrogen transfer provide a connection between electronic-structure accuracy and catalytic predictions.</p>
           <h3>Research directions</h3>
           <ul class="list">
@@ -107,7 +100,7 @@
         <section>
           <div class="number">04 / OPTOELECTRONICS</div>
           <h2>Electronic and optical response</h2>
-          <p>My research links electronic structure to optical behavior in perovskites and related semiconductors, hybrid halides, and donor–acceptor conjugated polymers. Collaboration with experimental groups connects calculations to materials selection and the interpretation of optical measurements.</p>
+          <p>My research links electronic structure to optical behavior in perovskites and related semiconductors, hybrid halides, and donor–acceptor conjugated polymers. Collaboration with experimental groups connects computed properties to measurable optical response.</p>
           <h3>Research directions</h3>
           <ul class="list">
             <li>Investigate lead-free and double perovskites and related semiconductors.</li>
@@ -119,7 +112,7 @@
         <section>
           <div class="number">05 / MANY-BODY THEORY</div>
           <h2>Self-consistent GW theory</h2>
-          <p>My background includes self-consistent GW methods for semiconductors and relativistic coupled-cluster calculations for atomic properties and electric dipole moments. Across these areas, I focus on balancing electronic-structure accuracy with memory use and computational cost.</p>
+          <p>My background includes self-consistent GW methods for semiconductors and relativistic coupled-cluster calculations for atomic properties and electric dipole moments. Across these areas, I focus on connecting accurate many-body electronic structure with physical observables.</p>
           <p><a href="publications.html#paper-8">Tagged work: Analysis of diagonal G and subspace W approximations within fully self-consistent GW calculations for bulk semiconducting systems.</a></p>
           <p class="note">Research directions described here include ongoing interests and proposed extensions, rather than completed project outcomes.</p>
         </section>
