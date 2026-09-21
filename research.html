@@ -37,14 +37,14 @@
         <section>
           <div class="number">01 / ELECTRONIC-STRUCTURE METHODS</div>
           <h2>Self-interaction correction and localized orbitals</h2>
-          <p>Self-interaction error can distort the description of localized electronic states, stretched bonds, and transition states. My work examines these error sources and develops methods within density-functional theory that retain an accurate, physically meaningful orbital picture.</p>
-          <p>A central direction is a Wannier-first approach that constructs localized, Wannier-like orbitals directly in real space using Gaussian basis functions, reducing dependence on conventional canonical Bloch-like states during the self-consistent cycle.</p>
+          <p>Self-interaction error can distort the description of localized electronic states, stretched bonds, and transition states. My work examines these error sources and develops methods within density-functional theory to improve the description of such systems.</p>
+          <p>A central direction is a Wannier-first approach that constructs localized, Wannier-like orbitals directly in real space using Gaussian basis functions, reducing dependence on conventional orbital transformations.</p>
 
           <article class="feature card">
             <div class="number">FEATURED PAPER</div>
             <h3>A Wannier-first formulation for extended systems</h3>
-            <p>This real-space formulation constructs variational Wannier-like functions self-consistently within a finite Wannier domain. The orbitals provide the occupied space and are used to build the charge density, electrostatic potential, and per-cell energy, while band structures can be recovered afterward from a Bloch-like Gaussian basis.</p>
-            <p>The framework naturally accommodates combined translation–rotation (screw) symmetries, making it suitable for chiral and helical systems with finite twist angles. Demonstrations on linear and twisted chains, graphene, AA graphite, and helically stacked graphite show close agreement with reference periodic calculations and establish a foundation for orbital-dependent functionals such as Perdew–Zunger self-interaction correction.</p>
+            <p>This real-space formulation constructs variational Wannier-like functions self-consistently within a finite Wannier domain. The orbitals provide the occupied space and are used to build the density and energy of extended systems.</p>
+            <p>The framework naturally accommodates combined translation–rotation (screw) symmetries, making it suitable for chiral and helical systems with finite twist angles. Demonstrations on lithium chains and helical structures illustrate the approach.</p>
             <p><a href="https://doi.org/10.1063/5.0348813">Read the published paper in The Journal of Chemical Physics (2026), DOI: 10.1063/5.0348813</a></p>
 
             <div class="grid two">
@@ -77,8 +77,8 @@
         <section>
           <div class="number">02 / REACTION BARRIERS</div>
           <h2>Analyzing PZ-SIC beyond the LSDA</h2>
-          <p>Incorporating self-interaction corrections can substantially improve density-functional predictions of chemical reaction barrier heights. In this work, I performed an orbital-by-orbital analysis of Perdew–Zunger self-interaction corrections within FLOSIC.</p>
-          <p>The analysis follows the reactant (R), transition-state (TS), and product (P) configurations. Across all three functionals, the dominant contribution to the SIC of barrier heights comes from orbitals whose localization changes along the reaction coordinate.</p>
+          <p>Incorporating self-interaction corrections can substantially improve density-functional predictions of chemical reaction barrier heights. In this work, I performed an orbital-by-orbital analysis of Perdew–Zunger self-interaction corrections using FLOSIC with LSDA, PBE, and SCAN.</p>
+          <p>The analysis follows the reactant (R), transition-state (TS), and product (P) configurations. Across all three functionals, the dominant contribution to the SIC of barrier heights comes from orbitals associated with stretched bonds in the transition state.</p>
 
           <div class="grid two">
             <article class="card">
@@ -113,21 +113,39 @@
 
         <section>
           <div class="number">03 / CATALYSIS AND ENERGY</div>
-          <h2>Reliable reaction energetics</h2>
-          <p>I use first-principles calculations to investigate catalytic mechanisms and structure-property relationships in transition-metal phosphides and carbides, single-atom catalysts, and doped two-dimensional materials.</p>
-          <p>Reaction barriers involving stretched bonds and hydrogen transfer provide a connection between electronic-structure accuracy and catalytic predictions.</p>
+          <h2>Electrochemistry and electrocatalysis</h2>
+          <p>My research in sustainable energy focuses on the development of advanced nanomaterials for electrocatalysis. In particular, I have investigated single-atom catalysts in which isolated metal atoms are doped into two-dimensional materials, including borophane (hydrogen-passivated borophene), transition-metal dichalcogenides, and phosphorene.</p>
+          <p>Through extensive screening of metal- and non-metal-doped 2D materials, I have evaluated promising single-atom electrocatalysts for the oxygen reduction reaction (ORR) and oxygen evolution reaction (OER). This work, published in <em>Physical Chemistry Chemical Physics</em> and <em>ChemElectroChem</em>, connects catalyst composition and local electronic structure with activity, selectivity, and stability.</p>
+          <p>ORR and OER are central to proton-exchange-membrane fuel cells, water splitting, and metal–air batteries, but their sluggish kinetics often require scarce and expensive noble metals or metal oxides. My work explores more abundant alternatives, including doped 2D materials, non-precious-metal catalysts, and carbon-based nanomaterials.</p>
+
+          <div class="grid two">
+            <article class="card">
+              <h3>Computational approaches</h3>
+              <ul class="list">
+                <li>Plane-wave density-functional theory using VASP and JDFTx.</li>
+                <li>Atomic Simulation Environment (ASE) workflows with climbing-image nudged elastic band (CI-NEB) calculations for kinetic barriers.</li>
+                <li>Q-Chem calculations for complementary molecular and electronic-structure analysis.</li>
+                <li>Continuum solvation models, including VASPsol, CANDLE, and SALSA, for solvent effects in electrochemical reactions.</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Electrochemical mechanisms</h3>
+              <p>My ongoing work examines water-solvent effects on ORR and OER for promising metal-doped carbon nanomaterials such as Fe–N–C. Using continuum solvation models and the grand-canonical Hamiltonian approach implemented in the open-source JDFTx code, I perform fixed-potential calculations to investigate catalyst stability, metal dissolution, and reaction mechanisms at the microkinetic level.</p>
+            </article>
+          </div>
+
           <h3>Research directions</h3>
           <ul class="list">
             <li>Screen transition-metal, bimetallic, and 2D catalyst platforms using DFT and targeted self-interaction corrections.</li>
             <li>Identify chemical regimes where localized states and stretched-bond intermediates require improved electronic-structure treatments.</li>
-            <li>Explore solvent and electrolyte effects using ab initio molecular dynamics and quantum continuum approaches.</li>
+            <li>Model explicit and continuum solvent effects, electrode potential, metal dissolution, and electrochemical reaction kinetics.</li>
           </ul>
         </section>
 
         <section>
           <div class="number">04 / OPTOELECTRONICS</div>
           <h2>Electronic and optical response</h2>
-          <p>My research links electronic structure to optical behavior in perovskites and related semiconductors, hybrid halides, and donor–acceptor conjugated polymers. Collaboration with experimental groups connects computed structures and excitations to measurable optical response.</p>
+          <p>My research links electronic structure to optical behavior in perovskites and related semiconductors, hybrid halides, and donor–acceptor conjugated polymers. Collaboration with experimental groups connects computed structure, defects, and excitations to measurable optical properties.</p>
           <h3>Research directions</h3>
           <ul class="list">
             <li>Investigate lead-free and double perovskites and related semiconductors.</li>
@@ -139,7 +157,7 @@
         <section>
           <div class="number">05 / MANY-BODY THEORY</div>
           <h2>Self-consistent GW theory</h2>
-          <p>My background includes self-consistent GW methods for semiconductors and relativistic coupled-cluster calculations for atomic properties and electric dipole moments. Across these areas, I develop computational approaches that connect accurate many-body descriptions with practical materials calculations.</p>
+          <p>My background includes self-consistent GW methods for semiconductors and relativistic coupled-cluster calculations for atomic properties and electric dipole moments. Across these areas, I develop approximations that make accurate many-body calculations more computationally accessible.</p>
           <p><a href="publications.html#paper-8">Tagged work: Analysis of diagonal G and subspace W approximations within fully self-consistent GW calculations for bulk semiconducting systems.</a></p>
           <p class="note">Research directions described here include ongoing interests and proposed extensions, rather than completed project outcomes.</p>
         </section>
